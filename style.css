@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "./styles/normalize.css";
+
+@import "./styles/root.css";
+
+@import "./styles/header.css";
+
+
+body {
+    margin: 0 auto;
+    min-width: 375px;
+    font-family: var(--font-family-base);
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 1536px;
+    padding: 0 44px;
+    margin: 0 auto;
+}
