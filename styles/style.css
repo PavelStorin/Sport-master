@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-@import "./styles/normalize.css";
+@import "./utlils/normalize.css";
 
-@import "./styles/root.css";
+@import "./utlils/root.css";
 
-@import "./styles/header.css";
+@import "./components/header.css";
 
 
 body {
@@ -12,6 +12,7 @@ body {
     min-width: 375px;
     font-family: var(--font-family-base);
     font-weight: 400;
+    font-size: 12px;
 }
 
 .container {

@@ -1,8 +1,10 @@
 :root {
      /* COLORS
-    --dark-color: #0b132a;
-    --grey-color:  #4f5665;
-     /* SETTINGS */
+     /*  */
+
+    --white: #fff;
+    --light-blue: #b5caff;
+    --blue: #1551e5;
      
      /* FONTS */
      --font-family-base: 'Roboto', sans-serif;
