@@ -16,61 +16,208 @@
     <header class="header">
       <div class="header__top">
         <div class="container header__container">
-          <button class="header__top-btn" type="button">Фрязино</button>
-          <nav class="header__top-nav top-nav">
-            <a href="tel:+74957777771" class="top-nav__link">8 495 777-777-1</a>
-            <a href="/stores" class="top-nav__link">Магазины</a>
-            <a href="/delivery" class="top-nav__link">Доставка и оплата</a>
-            <a href="/marketplace" class="top-nav__link"
-              >Продавай на Спортмастере</a
-            >
-            <button class="top-nav__dropdown-btn dropdown-btn" type="button">
-              <span class="dropdown-btn__text">Помощь</span>
-              <span class="dropdown-btn__icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="10"
-                  width="10"
-                  viewBox="0 0 640 640"
+          <button class="header__location-btn" type="button">Фрязино</button>
+          <nav class="header__nav top-nav">
+            <ul class="top-nav__list">
+              <li class="top-nav__item">
+                <a href="tel:+74957777771" class="top-nav__link"
+                  >8 495 777-777-1</a
                 >
-                  <path
-                    fill="rgb(181, 202, 255)"
-                    d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
-                  />
-                </svg>
-              </span>
-            </button>
+              </li>
+              <li class="top-nav__item">
+                <a href="/stores" class="top-nav__link">Магазины</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="/delivery" class="top-nav__link">Доставка и оплата</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="/marketplace" class="top-nav__link"
+                  >Продавай на Спортмастере</a
+                >
+              </li>
+              <li class="top-nav__item">
+                <button
+                  class="top-nav__dropdown-btn dropdown-btn"
+                  type="button"
+                >
+                  <span class="dropdown-btn__text">Помощь</span>
+                  <span class="dropdown-btn__icon"
+                    ><svg
+                      class="dropdown-btn__svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="10"
+                      width="10"
+                      viewBox="0 0 640 640"
+                    >
+                      <path
+                        d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
 
       <div class="header__main">
         <div class="container header__container">
-          <a href="/" class="header__logo">
-            <img
-              src="./public/icons/header/headerLogo.svg"
-              alt="Спортмастер"
-              class="header__logo-img"
-            />
-          </a>
+          <a href="#" class="header__logo"></a>
 
-          <button class="header__catalog-btn catalog-button">
-            <span class="catalog-button__icon"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="20"
-                width="20"
-                viewBox="0 0 640 640"
-              >
-                <path
-                  fill="#1551e5"
-                  d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+          <div class="header__catalog-search catalog-search">
+            <button class="catalog-search__btn catalog-btn">
+              <span class="catalog-btn__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20"
+                  width="20"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    fill="#1551e5"
+                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+                  />
+                </svg>
+              </span>
+
+              <span class="catalog-btn__text">Каталог</span>
+            </button>
+
+            <form
+              action="/search"
+              method="get"
+              class="header__search search-form"
+            >
+              <div class="search-form__container">
+                <input
+                  type="search"
+                  placeholder="Поиск"
+                  class="search-form__input"
+                  aria-label="Поиск по сайту"
                 />
-              </svg>
-            </span>
+                <button
+                  type="submit"
+                  class="search-form__btn"
+                  aria-label="Найти"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20"
+                    width="20"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
 
-            <span class="catalog-button__text">Каталог</span>
-          </button>
+          <div class="header__actions user-actions">
+            <a class="user-actions__login" href="#">ВОЙТИ</a>
+
+            <ul class="user-actions__list">
+              <li class="user-actions__item">
+                <a class="user-actions__icon" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M519.8 126.4C536.6 120.8 545.6 102.7 540 85.9C534.4 69.1 516.3 60.1 499.6 65.6L386.6 103.3C372.7 79.8 347 64 317.7 64C273.5 64 237.7 99.8 237.7 144C237.7 147 237.9 149.9 238.2 152.8L115.6 193.6C98.8 199.2 89.8 217.3 95.4 234.1C101 250.9 119.1 259.9 135.9 254.3L271.4 209.1C275.9 212.3 280.7 215 285.8 217.3L285.8 544C285.8 561.7 300.1 576 317.8 576L509.8 576C527.5 576 541.8 561.7 541.8 544C541.8 526.3 527.5 512 509.8 512L349.8 512L349.8 217.3C370.8 208.1 387 190.3 394 168.3L519.9 126.3zM437.3 352L509.7 227.8L582.1 352L437.2 352zM509.7 448C572.6 448 624.9 414 635.7 369.1C638.3 358.1 634.7 346.8 629 337L533.8 173.8C528.8 165.2 519.6 160 509.7 160C499.8 160 490.6 165.3 485.6 173.8L390.4 337.1C384.7 346.9 381.1 358.2 383.7 369.2C394.5 414 446.8 448.1 509.7 448.1zM126.8 355.8L199.2 480L54.3 480L126.7 355.8zM.9 497.1C11.7 542 64 576 126.8 576C189.6 576 242 542 252.8 497.1C255.4 486.1 251.8 474.8 246.1 465L150.9 301.8C145.9 293.2 136.7 288 126.8 288C116.9 288 107.7 293.3 102.7 301.8L7.6 465.1C1.9 474.9-1.7 486.2 .9 497.2z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user-actions__item">
+                <a class="user-actions__icon" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user-actions__item">
+                <a class="user-actions__icon" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__down">
+        <div class="container header__container">
+          <nav class="header__menu down-menu">
+            <ul class="down-menu__list">
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">ЖЕНЩИНАМ</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">МУЖЧИНАМ</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">ДЕТЯМ И ПОДРОСТКАМ</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">ВИДЫ СПОРТА</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">БРЕНДЫ</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link"
+                  ><div class="down-menu__icon daimond-icon"></div>
+                  ПРЕМИУМ</a
+                >
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link"
+                  ><div class="down-menu__icon style-icon"></div>
+                  СТИЛЬ</a
+                >
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">ИЗ-ЗА РУБЕЖА</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link"
+                  ><div class="down-menu__icon sale-icon"></div>
+                  СКИДКИ</a
+                >
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">АКЦИИ</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">МЕДИА</a>
+              </li>
+              <li class="down-menu__item">
+                <a href="#" class="down-menu__link">ПОДАРОЧНЫЕ КАРТЫ</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

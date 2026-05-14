@@ -2,7 +2,7 @@
 
 @import "./utlils/normalize.css";
 
-@import "./utlils/root.css";
+@import "./base/variables.css";
 
 @import "./components/header.css";
 
