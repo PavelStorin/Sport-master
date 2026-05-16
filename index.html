@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +37,7 @@
               </li>
               <li class="top-nav__item">
                 <button
-                  class="top-nav__dropdown-btn dropdown-btn"
+                  class="top-nav__dropdown-btn dropdown-btn btn-reset"
                   type="button"
                 >
                   <span class="dropdown-btn__text">Помощь</span>
@@ -66,7 +66,7 @@
           <a href="#" class="header__logo"></a>
 
           <div class="header__catalog-search catalog-search">
-            <button class="catalog-search__btn catalog-btn">
+            <button class="catalog-search__btn catalog-btn btn-reset">
               <span class="catalog-btn__icon"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,40 +84,49 @@
               <span class="catalog-btn__text">Каталог</span>
             </button>
 
-            <form
-              action="/search"
-              method="get"
-              class="header__search search-form"
-            >
-              <div class="search-form__container">
-                <input
-                  type="search"
-                  placeholder="Поиск"
-                  class="search-form__input"
-                  aria-label="Поиск по сайту"
+            <div class="header__search search-container">
+              <svg
+                class="search-container__icon-mobile"
+                xmlns="http://www.w3.org/2000/svg"
+                height="15"
+                width="15"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
                 />
-                <button
-                  type="submit"
-                  class="search-form__btn"
-                  aria-label="Найти"
+              </svg>
+
+              <input
+                type="search"
+                placeholder="Поиск"
+                class="search-container__input"
+                aria-label="Поиск по сайту"
+              />
+              <button
+                type="submit"
+                class="search-container__btn btn-reset"
+                aria-label="Найти"
+              >
+                <svg
+                  class="search-container__dekstop-mobile"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20"
+                  width="20"
+                  viewBox="0 0 640 640"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="20"
-                    width="20"
-                    viewBox="0 0 640 640"
-                  >
-                    <path
-                      d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </form>
+                  <path
+                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="header__actions user-actions">
-            <a class="user-actions__login" href="#">ВОЙТИ</a>
+            <button class="user-actions__login btn-reset" href="#">
+              войти
+            </button>
 
             <ul class="user-actions__list">
               <li class="user-actions__item">
@@ -172,49 +181,49 @@
           <nav class="header__menu down-menu">
             <ul class="down-menu__list">
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">ЖЕНЩИНАМ</a>
+                <a href="#" class="down-menu__link">женщинам</a>
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">МУЖЧИНАМ</a>
+                <a href="#" class="down-menu__link">мужчинам</a>
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">ДЕТЯМ И ПОДРОСТКАМ</a>
+                <a href="#" class="down-menu__link">детям и подросткам</a>
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">ВИДЫ СПОРТА</a>
+                <a href="#" class="down-menu__link">виды спорта</a>
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">БРЕНДЫ</a>
+                <a href="#" class="down-menu__link">бренды</a>
               </li>
               <li class="down-menu__item">
                 <a href="#" class="down-menu__link"
                   ><div class="down-menu__icon daimond-icon"></div>
-                  ПРЕМИУМ</a
+                  премиум</a
                 >
               </li>
               <li class="down-menu__item">
                 <a href="#" class="down-menu__link"
                   ><div class="down-menu__icon style-icon"></div>
-                  СТИЛЬ</a
+                  стиль</a
                 >
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">ИЗ-ЗА РУБЕЖА</a>
+                <a href="#" class="down-menu__link">из-за рубежа</a>
               </li>
               <li class="down-menu__item">
                 <a href="#" class="down-menu__link"
                   ><div class="down-menu__icon sale-icon"></div>
-                  СКИДКИ</a
+                  скидки</a
                 >
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">АКЦИИ</a>
+                <a href="#" class="down-menu__link">акции</a>
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">МЕДИА</a>
+                <a href="#" class="down-menu__link">медиа</a>
               </li>
               <li class="down-menu__item">
-                <a href="#" class="down-menu__link">ПОДАРОЧНЫЕ КАРТЫ</a>
+                <a href="#" class="down-menu__link">подарочные карты</a>
               </li>
             </ul>
           </nav>
