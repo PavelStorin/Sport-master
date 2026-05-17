@@ -15,9 +15,6 @@
 }
 
 .header__location-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
     color: var(--white);
     cursor: pointer;
 }
@@ -289,6 +286,77 @@
     height: 16px;
 }
 
+
+/* скрытые элементы */
+.header__down-mobile {
+    background-color: var(--blue);
+    min-height: 31px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-mobile__icon {
+    fill: var(--light-blue);
+    margin-left: 8px;
+    align-self: flex-end;
+}
+
+.bar-mobile {
+    box-shadow: inset 0 1px var(--grey);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 49px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.bar-mobile__link {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: var(--light-grey);
+    fill: var(--light-grey);
+    font-size: 9px;
+}
+
+.bar-mobile__link.active {
+    fill: var(--blue);
+    color: var(--blue);
+}
+
+.bar-mobile__btn {
+    display: flex;
+    align-items: center;
+    color: var(--light-grey);
+    fill: var(--light-grey);
+    font-size: 9px;
+}
+
+.bar-mobile__icon {
+    margin-right: 8px;
+}
+
+@media (min-width: 1025px) {
+    .search-container__icon-mobile, .header__down-mobile, .bar-mobile {
+        display: none;
+    }    
+}
+
+
+/* адаптив */
 @media (max-width: 1200px) {
   .down-menu__item:last-child {
     display: none;
@@ -331,8 +399,21 @@
   }
 }
 
-@media (min-width: 1025px) {
-    .search-container__icon-mobile {
-        display: none;
-    }
-}
+@media (max-width: 764px) {
+    .container.header__container {
+    padding: 0 16px;
+  }
+
+  .bar-mobile__btn {
+   flex-direction: column;
+  }
+
+  .bar-mobile__link {
+    flex-direction: column;
+  }
+ 
+  .bar-mobile__icon {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+} 
