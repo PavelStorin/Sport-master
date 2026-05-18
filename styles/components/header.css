@@ -176,7 +176,7 @@
     width: 64px;
     padding: 0 12px;
     height: 100%;
-    fill:  rgb(255, 255, 255);
+    fill:  var(--white);
     flex-shrink: 0;
     transition: background-color 0.3s ease-in-out;
 }
@@ -300,7 +300,6 @@
 .btn-mobile {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .btn-mobile__icon {

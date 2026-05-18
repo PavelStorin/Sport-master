@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+    min-width: 375px;
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1536px;
+    padding: 0 44px;
+    margin: 0 auto;
+}
+
+.btn-reset {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
