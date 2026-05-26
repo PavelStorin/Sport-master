@@ -1,9 +1,9 @@
+@use "./utlils/normalize.scss";
+
+@use "./base/global.scss";
+
+@use "./base/variables.scss";
+
+@use "./components/header.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-@import "./utlils/normalize.css";
-
-@import "./base/global.css";
-
-@import "./base/variables.css";
-
-@import "./components/header.css";
