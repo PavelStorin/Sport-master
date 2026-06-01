@@ -1,24 +1,30 @@
-:root {
-     /* COLORS
-     /*  */
+// ШРИФТЫ
+$font-family-base: 'Roboto', sans-serif;
+$font-weight-normal: 400;
+$font-size-base: 12px;
+$font-base: $font-family-base;
 
-    --white: #fff;
-    --light-blue: #b5caff;
-    --blue: #1551e5;
-    --grey: #bababa33;
-    --light-grey: #bababa;
-    --color-blue-input: #1c66f4;
-    --black: #121621;
-    --hover-blue-link: #89aaff;
-    --active-blue-link: #0e42c1;
-    --hover-btn-background-color: #eef6ff;
-    --hover-input-form-blue: #1741b6;
-     /* FONTS */
-     --font-family-base: 'Roboto', sans-serif;
-     /* --section-title: normal 500 35px/143% var(--font-family-base);
-     --item-desc-section: normal 400 16px/188% var(--font-family-base); */
-     /* --item-desc-desktop: normal 400 16px/32px var(--font-family-base);
-     --item-title-desktop: normal 700 24px/32px var(--font-family-base);
-     --btn-font-desktop: normal 700 23px/100% var(--font-family-base);
-     --headfoot-desc-desktop: normal 600 18px/100% var(--font-family-base); */
-}
+// РАЗМЕРЫ И СЕТКА
+$screen-min-width: 375px;
+$container-max-width: 1536px;
+$container-padding: 0 44px;
+
+// ЦВЕТА
+
+$color-white: #ffffff;
+$color-black: #121621;
+
+$color-blue: #1551e5;
+$color-blue-light: #b5caff;
+$color-blue-input: #1c66f4;
+$color-blue-background: #0e42c1;
+
+$color-grey: #bababa33; 
+$color-grey-light: #bababa;
+
+
+// ИНТЕРАКТИВНЫЕ СОСТОЯНИЯ
+$color-link-hover: #89aaff;
+$color-link-active: #0e42c1;
+$color-btn-hover-bg: #eef6ff;
+$color-input-hover: #1741b6;
