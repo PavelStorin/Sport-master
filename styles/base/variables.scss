@@ -10,7 +10,6 @@ $container-max-width: 1536px;
 $container-padding: 0 44px;
 
 // ЦВЕТА
-
 $color-white: #ffffff;
 $color-black: #121621;
 
@@ -28,3 +27,15 @@ $color-link-hover: #89aaff;
 $color-link-active: #0e42c1;
 $color-btn-hover-bg: #eef6ff;
 $color-input-hover: #1741b6;
+
+// Скругления
+$radius-main: 8px;
+$radius-small: 6px;
+
+// Текст
+$font-size-sm: 12px;
+$font-size-xs: 9px;
+$letter-spacing-nav: 0.8px;
+
+// Анимация
+$transition-default: 0.3s ease-in-out;

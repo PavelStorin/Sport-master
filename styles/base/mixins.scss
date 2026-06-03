@@ -1,0 +1,26 @@
+// Медиазапросы
+@mixin respond-to($breakpoint) {
+    @media (max-width: #{$breakpoint}px) {
+        @content;
+    }
+}
+
+@mixin respond-from($breakpoint) {
+    @media (min-width: #{$breakpoint}px) {
+        @content;
+    }
+}
+
+// Флексбокс с центрированием
+@mixin flex-center($justify: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+// Скрытие элементов
+@mixin hidden-tablet {
+    @include respond-to(1024) {
+        display: none !important;
+    }
+}
