@@ -1,0 +1,151 @@
+@use "../base/variables" as *;
+@use "../base/mixins.scss" as*;
+
+
+.main__container {
+    @include respond-to(1024) {
+        padding: 0 0 0 32px;       
+    }
+
+    @include respond-to(764) {
+        padding: 0 0 0 16px;
+    }
+
+    .popular-brands {
+        &__list {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+        }
+
+        &__item {
+            width: 130px;
+            height: 75px; 
+            flex-shrink: 0;
+
+            @include respond-to(1024) {
+                width: 104px;
+                height: 60px; 
+            }
+        }
+
+        &__link {
+            width: 100%;
+            height: 100%;
+            background-color: $color-blue-light-background;
+            border-radius: 10px;
+            @include flex-center;
+        }
+
+        &__icon {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+
+            @include respond-to(1024) {
+                width: 60%;
+                height: 60%; 
+            }
+            
+            &.puma {
+                max-width: 52px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/puma.svg");
+            }
+
+            &.outventure {
+                max-width: 112px; 
+                max-height: 47px;
+                background-image: url("../../public/icons/outventure.svg");
+            }
+
+            &.adidas{
+                max-width: 49px; 
+                max-height: 31px;
+                background-image: url("../../public/icons/adidas.svg");
+            }
+
+            &.nike {
+                max-width: 65px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/nike.svg");
+            }
+
+            &.demix {
+                max-width: 92px; 
+                max-height: 26px;
+                background-image: url("../../public/icons/demix.svg");
+            }
+
+            &.kappa {
+                max-width: 41px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/kappa.svg");
+            }
+
+            &.northland {
+                max-width: 75px; 
+                max-height: 12px;
+                background-image: url("../../public/icons/northland.svg");
+            }
+
+            &.reebok {
+                max-width: 54px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/reebok.svg");
+            }
+
+            &.stern {
+                max-width: 76px; 
+                max-height: 16px;
+                background-image: url("../../public/icons/stern.svg");
+            }
+
+            &.nb {
+                max-width: 52px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/nb.svg");
+            }
+
+            &.fila {
+                max-width: 69px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/fila.svg");
+            }
+
+            &.termit {
+                max-width: 87px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/termit.svg");
+            }
+
+            &.reaction {
+                max-width: 76px; 
+                max-height: 7px;
+                background-image: url("../../public/icons/reaction.svg");
+            }
+
+            &.geotech {
+                max-width: 76px; 
+                max-height: 22px;
+                background-image: url("../../public/icons/geotech.svg");
+            }
+
+            &.sensana {
+                max-width: 58px; 
+                max-height: 34px;
+                background-image: url("../../public/icons/sensana.svg");
+            }
+
+            &.crocs {
+                max-width: 76px; 
+                max-height: 32px;
+                background-image: url("../../public/icons/crocs.svg");
+            }
+        }
+    }
+}
+
+ 

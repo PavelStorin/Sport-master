@@ -2,6 +2,8 @@
 @use "../base/mixins.scss" as*;
 
 .header {
+    margin-bottom: 20px;
+
     &__top {
         background-color: $color-blue-background;
         min-height: 36px;
