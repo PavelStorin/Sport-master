@@ -1,0 +1,92 @@
+@use "../base/variables" as *;
+@use "../base/mixins.scss" as*;
+
+.sports {
+    margin-bottom: 60px;
+
+    &__list {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+    }
+
+    &__link {
+        font-weight: $font-weight-medium;
+        font-size: $font-size-m;
+        color: $color-grey-link;
+
+        @include respond-to(1024) {
+            font-size: $font-size-sm;
+        }
+    }
+
+     &__card {
+        flex-shrink: 0;
+        display: block;
+        text-decoration: none;
+        width: 216px;
+        height: 120px;
+        border-radius: $radius-main;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        padding: 16px;
+        box-sizing: border-box;
+
+        @include respond-to(1024) {
+            width: 162px;
+            height: 90px; 
+        }
+
+        &.tourism {
+            background-image: url("../../public/images/tourism.jpg");
+        }
+
+        &.camping {
+            background-image: url("../../public/images/camping.jpg");
+        }
+
+        &.fishing {
+            background-image: url("../../public/images/fishing.jpg");
+        }
+        
+        &.water-tourism {
+            background-image: url("../../public/images/water_tourism.jpg");
+        }
+        
+        &.beach {
+            background-image: url("../../public/images/beach.png");
+        }
+
+        &.cycle {
+            background-image: url("../../public/images/cycle.jpg");
+        }
+
+        &.scooter {
+            background-image: url("../../public/images/scooter.jpg");
+        }
+
+        &.run {
+            background-image: url("../../public/images/run.jpg");
+        }
+
+        &.trailrun {
+            background-image: url("../../public/images/trailrun.jpg");
+        }
+
+        &.rollerskate {
+            background-image: url("../../public/images/rollerskate.jpg");
+        }
+
+        &.skateboarding {
+            background-image: url("../../public/images/skateboarding.jpg");
+        }
+
+        &.football {
+            background-image: url("../../public/images/football.jpg");
+        }
+    }
+
+}
+
+
