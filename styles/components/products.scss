@@ -5,11 +5,11 @@
     margin-bottom: 60px;
 
     &__container {
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             padding: 0 32px;
         }
 
-        @include respond-to(764) {
+        @include respond-to($mobile) {
             padding: 0 16px;
         }
     }
@@ -20,29 +20,30 @@
         gap: 28px 16px;
         width: 100%;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             grid-template-columns: repeat(4, 1fr);
         }
 
-        @include respond-to(764) {
+        @include respond-to($mobile) {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    &__card {
+ 
+
+    &__info {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 4px;
-        width: 100%;
-        height: 100%;
-        max-width: 228px;
-        
     }
 
     &__img-link {
         display: block;
         width: 100%;
-        min-height: 303px;
+        aspect-ratio: 0.75;
+         margin-bottom: 4px;
     }
 
     &__img-card {
@@ -51,7 +52,7 @@
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
-
+    
         &.leggings {
             background-image: url("../../public/images/leggings.jpg");
         }
@@ -91,25 +92,25 @@
             z-index: -1;
         }
 
-        &.badge-red {
+        &--theme-red {
             &::before {
                 background-color: $color-red;
             }
         }
 
-        &.badge-green {
+        &--theme-green {
             &::before {
                 background-color: $color-green;
             }
         }
 
-        &.badge-yellow {
+        &--theme-yellow {
             &::before {
                 background-color: $color-yellow;
             }
         }
 
-        &.badge-none {
+        &:empty {
             visibility: hidden;
         }
     }

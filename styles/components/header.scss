@@ -15,11 +15,11 @@
     &__container {
         @include flex-center(space-between);
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             padding: 0 32px;
         }
 
-        @include respond-to(764) {
+        @include respond-to($mobile) {
             padding: 0 16px;
         }
     }
@@ -88,7 +88,7 @@
         height: 100%;
         @include flex-center(flex-start);
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             min-height: 52px;
         }
     } 
@@ -102,7 +102,7 @@
         background-repeat: no-repeat;
         flex-shrink: 0;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             background-image: url("/public/icons/small-logo.svg");
             width: 30px;
             height: 21px;
@@ -141,7 +141,7 @@
         width: 100%;
         margin-right: 20px;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             margin-right: 0;
         }
     }
@@ -169,7 +169,7 @@
                 display: none;
             }
 
-            @include respond-to(1024) {
+            @include respond-to($tablet) {
                 fill: $color-white;
                 margin-right: 6px;
             }
@@ -251,7 +251,7 @@
         }
 
         &__icon {
-             @include flex-center;
+            @include flex-center;
         }
     }
 
@@ -273,7 +273,7 @@
         &__item {
             display: block;
 
-            @include respond-to(1200) {
+            @include respond-to($desktop) {
                 &:last-child {
                     display: none;
                 }
@@ -373,7 +373,7 @@
             font-size: 9px;
             @include flex-center;
 
-            @include respond-to(764) {
+            @include respond-to($mobile) {
                 flex-direction: column;
             }
         }
@@ -388,7 +388,7 @@
         &__icon {
             margin-right: 8px;
 
-            @include respond-to(764) {
+            @include respond-to($mobile) {
                 margin: 0 0 4px 0;
             }
         }

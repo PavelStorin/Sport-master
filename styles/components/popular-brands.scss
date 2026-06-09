@@ -15,9 +15,18 @@
         height: 75px; 
         flex-shrink: 0;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             width: 104px;
             height: 60px; 
+            &:last-child {
+                margin-right: 32px;
+            }
+        }
+
+        @include respond-to($mobile) {
+            &:last-child {
+                margin-right: 16px;
+            } 
         }
     }
 
@@ -36,7 +45,7 @@
         width: 100%;
         height: 100%;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             width: 60%;
             height: 60%; 
         }

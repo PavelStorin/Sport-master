@@ -15,7 +15,7 @@
         font-size: $font-size-m;
         color: $color-grey-link;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             font-size: $font-size-sm;
         }
     }
@@ -33,9 +33,18 @@
         padding: 16px;
         box-sizing: border-box;
 
-        @include respond-to(1024) {
+        @include respond-to($tablet) {
             width: 162px;
-            height: 90px; 
+            height: 90px;
+            &:last-child {
+                margin-right: 32px;
+            } 
+        }
+
+        @include respond-to($mobile) {
+            &:last-child {
+                margin-right: 16px;
+            } 
         }
 
         &.tourism {
