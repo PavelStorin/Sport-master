@@ -4,38 +4,32 @@
 .popular-brands {
     margin-bottom: 20px;
 
-    &__list {
-        display: flex;
-        gap: 8px;
-        overflow-x: auto;
+    &__list.swiper-wrapper {
+        display: flex;       
+        flex-direction: row; 
+        padding: 0;
+        margin: 0;
+        
     }
 
-    &__item {
+    &__item.swiper-slide {
         width: 130px;
-        height: 75px; 
         flex-shrink: 0;
-
-        @include respond-to($tablet) {
-            width: 104px;
-            height: 60px; 
-            &:last-child {
-                margin-right: 32px;
-            }
-        }
-
-        @include respond-to($mobile) {
-            &:last-child {
-                margin-right: 16px;
-            } 
-        }
+        height: auto;
+       
+     
     }
 
     &__link {
+        height: 75px; 
         width: 100%;
-        height: 100%;
         background-color: $color-blue-light-background;
         border-radius: 10px;
         @include flex-center;
+
+        @include respond-to($tablet) {
+            height: 60px; 
+        }
     }
 
     &__icon {
@@ -53,100 +47,145 @@
         &.puma {
             max-width: 52px; 
             max-height: 32px;
-            background-image: url("../../public/icons/puma.svg");
+            background-image: url("/icons/puma.svg");
         }
 
         &.outventure {
             max-width: 112px; 
             max-height: 47px;
-            background-image: url("../../public/icons/outventure.svg");
+            background-image: url("/icons/outventure.svg");
         }
 
         &.adidas{
             max-width: 49px; 
             max-height: 31px;
-            background-image: url("../../public/icons/adidas.svg");
+            background-image: url("/icons/adidas.svg");
         }
 
         &.nike {
             max-width: 65px; 
             max-height: 32px;
-            background-image: url("../../public/icons/nike.svg");
+            background-image: url("/icons/nike.svg");
         }
 
         &.demix {
             max-width: 92px; 
             max-height: 26px;
-            background-image: url("../../public/icons/demix.svg");
+            background-image: url("/icons/demix.svg");
         }
 
         &.kappa {
             max-width: 41px; 
             max-height: 32px;
-            background-image: url("../../public/icons/kappa.svg");
+            background-image: url("/icons/kappa.svg");
         }
 
         &.northland {
             max-width: 75px; 
             max-height: 12px;
-            background-image: url("../../public/icons/northland.svg");
+            background-image: url("/icons/northland.svg");
         }
 
         &.reebok {
             max-width: 54px; 
             max-height: 32px;
-            background-image: url("../../public/icons/reebok.svg");
+            background-image: url("/icons/reebok.svg");
         }
 
         &.stern {
             max-width: 76px; 
             max-height: 16px;
-            background-image: url("../../public/icons/stern.svg");
+            background-image: url("/icons/stern.svg");
         }
 
         &.nb {
             max-width: 52px; 
             max-height: 32px;
-            background-image: url("../../public/icons/nb.svg");
+            background-image: url("/icons/nb.svg");
         }
 
         &.fila {
             max-width: 69px; 
             max-height: 32px;
-            background-image: url("../../public/icons/fila.svg");
+            background-image: url("/icons/fila.svg");
         }
 
         &.termit {
             max-width: 87px; 
             max-height: 32px;
-            background-image: url("../../public/icons/termit.svg");
+            background-image: url("/icons/termit.svg");
         }
 
         &.reaction {
             max-width: 76px; 
             max-height: 7px;
-            background-image: url("../../public/icons/reaction.svg");
+            background-image: url("/icons/reaction.svg");
         }
 
         &.geotech {
             max-width: 76px; 
             max-height: 22px;
-            background-image: url("../../public/icons/geotech.svg");
+            background-image: url("/icons/geotech.svg");
         }
 
         &.sensana {
             max-width: 58px; 
             max-height: 34px;
-            background-image: url("../../public/icons/sensana.svg");
+            background-image: url("/icons/sensana.svg");
         }
 
         &.crocs {
             max-width: 76px; 
             max-height: 32px;
-            background-image: url("../../public/icons/crocs.svg");
+            background-image: url("/icons/crocs.svg");
+        }
+    }
+
+    &__slider {
+        position: relative;
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            padding: 10px;
+            background-color: $color-white;
+            border-radius: 24px;
+            box-shadow: 0 3px 8px #0000001a;
+
+            @include flex-center();
+
+            color: transparent !important;
+            font-size: 0 !important;
+
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                background-color: $color-btn-hover-ng;
+                box-shadow: 0 1px 3px #0003;
+            }
+
+            &:active {
+                background-color: $color-btn-active-ng;
+                box-shadow: 0 1px 3px #0003;
+            }
+
+            &::after {
+                display: none !important;
+                content: none !important; 
+            }
+
+            &.swiper-button-disabled {
+                display: none !important;
+            }
+
+            .slider-arrow-icon {
+                width: 16px;
+                height: 16px;
+                fill: $color-grey-link;
+            }
+
+            @include respond-to($tablet) {
+                display: none !important;
+            }
         }
     }
 }
-
-
- 
