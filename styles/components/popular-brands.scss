@@ -9,15 +9,15 @@
         flex-direction: row; 
         padding: 0;
         margin: 0;
-        
+        margin-bottom: 20px;
     }
+
+    
 
     &__item.swiper-slide {
         width: 130px;
         flex-shrink: 0;
         height: auto;
-       
-     
     }
 
     &__link {
@@ -143,15 +143,12 @@
 
     &__slider {
         position: relative;
-
         .swiper-button-prev, 
         .swiper-button-next {
             padding: 10px;
             background-color: $color-white;
             border-radius: 24px;
             box-shadow: 0 3px 8px #0000001a;
-
-            @include flex-center();
 
             color: transparent !important;
             font-size: 0 !important;
@@ -186,6 +183,25 @@
             @include respond-to($tablet) {
                 display: none !important;
             }
+        }
+
+        .scrollbar-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 190px; 
+            
+            
+            @include respond-to($tablet) {
+                display: none !important;
+            }  
+        }
+
+        .swiper-scrollbar {
+            --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
+            --swiper-scrollbar-drag-bg-color: #3d3d3d;
+            --swiper-scrollbar-size: 3px;
         }
     }
 }
