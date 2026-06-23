@@ -2,206 +2,186 @@
 @use "../base/mixins.scss" as*;
 
 .popular-brands {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    &__list.swiper-wrapper {
-        display: flex;       
-        flex-direction: row; 
-        padding: 0;
-        margin: 0;
-        margin-bottom: 20px;
+  &__link {
+    height: 75px;
+    width: 100%;
+    background-color: $color-blue-light-background;
+    border-radius: 10px;
+    @include flex-center;
+
+    @include respond-to($tablet) {
+      height: 60px;
+    }
+  }
+
+  &__icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+
+    @include respond-to($tablet) {
+      width: 60%;
+      height: 60%;
     }
 
-    
-
-    &__item.swiper-slide {
-        width: 130px;
-        flex-shrink: 0;
-        height: auto;
+    &.puma {
+      max-width: 52px;
+      max-height: 32px;
+      background-image: url("/icons/puma.svg");
     }
 
-    &__link {
-        height: 75px; 
-        width: 100%;
-        background-color: $color-blue-light-background;
-        border-radius: 10px;
-        @include flex-center;
-
-        @include respond-to($tablet) {
-            height: 60px; 
-        }
+    &.outventure {
+      max-width: 112px;
+      max-height: 47px;
+      background-image: url("/icons/outventure.svg");
     }
 
-    &__icon {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 100%;
-        height: 100%;
-
-        @include respond-to($tablet) {
-            width: 60%;
-            height: 60%; 
-        }
-        
-        &.puma {
-            max-width: 52px; 
-            max-height: 32px;
-            background-image: url("/icons/puma.svg");
-        }
-
-        &.outventure {
-            max-width: 112px; 
-            max-height: 47px;
-            background-image: url("/icons/outventure.svg");
-        }
-
-        &.adidas{
-            max-width: 49px; 
-            max-height: 31px;
-            background-image: url("/icons/adidas.svg");
-        }
-
-        &.nike {
-            max-width: 65px; 
-            max-height: 32px;
-            background-image: url("/icons/nike.svg");
-        }
-
-        &.demix {
-            max-width: 92px; 
-            max-height: 26px;
-            background-image: url("/icons/demix.svg");
-        }
-
-        &.kappa {
-            max-width: 41px; 
-            max-height: 32px;
-            background-image: url("/icons/kappa.svg");
-        }
-
-        &.northland {
-            max-width: 75px; 
-            max-height: 12px;
-            background-image: url("/icons/northland.svg");
-        }
-
-        &.reebok {
-            max-width: 54px; 
-            max-height: 32px;
-            background-image: url("/icons/reebok.svg");
-        }
-
-        &.stern {
-            max-width: 76px; 
-            max-height: 16px;
-            background-image: url("/icons/stern.svg");
-        }
-
-        &.nb {
-            max-width: 52px; 
-            max-height: 32px;
-            background-image: url("/icons/nb.svg");
-        }
-
-        &.fila {
-            max-width: 69px; 
-            max-height: 32px;
-            background-image: url("/icons/fila.svg");
-        }
-
-        &.termit {
-            max-width: 87px; 
-            max-height: 32px;
-            background-image: url("/icons/termit.svg");
-        }
-
-        &.reaction {
-            max-width: 76px; 
-            max-height: 7px;
-            background-image: url("/icons/reaction.svg");
-        }
-
-        &.geotech {
-            max-width: 76px; 
-            max-height: 22px;
-            background-image: url("/icons/geotech.svg");
-        }
-
-        &.sensana {
-            max-width: 58px; 
-            max-height: 34px;
-            background-image: url("/icons/sensana.svg");
-        }
-
-        &.crocs {
-            max-width: 76px; 
-            max-height: 32px;
-            background-image: url("/icons/crocs.svg");
-        }
+    &.adidas {
+      max-width: 49px;
+      max-height: 31px;
+      background-image: url("/icons/adidas.svg");
     }
 
-    &__slider {
-        position: relative;
-        .swiper-button-prev, 
-        .swiper-button-next {
-            padding: 10px;
-            background-color: $color-white;
-            border-radius: 24px;
-            box-shadow: 0 3px 8px #0000001a;
-
-            color: transparent !important;
-            font-size: 0 !important;
-
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-            &:hover {
-                background-color: $color-btn-hover-ng;
-                box-shadow: 0 1px 3px #0003;
-            }
-
-            &:active {
-                background-color: $color-btn-active-ng;
-                box-shadow: 0 1px 3px #0003;
-            }
-
-            &::after {
-                display: none !important;
-                content: none !important; 
-            }
-
-            &.swiper-button-disabled {
-                display: none !important;
-            }
-
-            .slider-arrow-icon {
-                width: 16px;
-                height: 16px;
-                fill: $color-grey-link;
-            }
-
-            @include respond-to($tablet) {
-                display: none !important;
-            }
-        }
-
-        .scrollbar-wrapper {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 190px; 
-            
-            
-            @include respond-to($tablet) {
-                display: none !important;
-            }  
-        }
-
-        .swiper-scrollbar {
-            --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
-            --swiper-scrollbar-drag-bg-color: #3d3d3d;
-            --swiper-scrollbar-size: 3px;
-        }
+    &.nike {
+      max-width: 65px;
+      max-height: 32px;
+      background-image: url("/icons/nike.svg");
     }
+
+    &.demix {
+      max-width: 92px;
+      max-height: 26px;
+      background-image: url("/icons/demix.svg");
+    }
+
+    &.kappa {
+      max-width: 41px;
+      max-height: 32px;
+      background-image: url("/icons/kappa.svg");
+    }
+
+    &.northland {
+      max-width: 75px;
+      max-height: 12px;
+      background-image: url("/icons/northland.svg");
+    }
+
+    &.reebok {
+      max-width: 54px;
+      max-height: 32px;
+      background-image: url("/icons/reebok.svg");
+    }
+
+    &.stern {
+      max-width: 76px;
+      max-height: 16px;
+      background-image: url("/icons/stern.svg");
+    }
+
+    &.nb {
+      max-width: 52px;
+      max-height: 32px;
+      background-image: url("/icons/nb.svg");
+    }
+
+    &.fila {
+      max-width: 69px;
+      max-height: 32px;
+      background-image: url("/icons/fila.svg");
+    }
+
+    &.termit {
+      max-width: 87px;
+      max-height: 32px;
+      background-image: url("/icons/termit.svg");
+    }
+
+    &.reaction {
+      max-width: 76px;
+      max-height: 7px;
+      background-image: url("/icons/reaction.svg");
+    }
+
+    &.geotech {
+      max-width: 76px;
+      max-height: 22px;
+      background-image: url("/icons/geotech.svg");
+    }
+
+    &.sensana {
+      max-width: 58px;
+      max-height: 34px;
+      background-image: url("/icons/sensana.svg");
+    }
+
+    &.crocs {
+      max-width: 76px;
+      max-height: 32px;
+      background-image: url("/icons/crocs.svg");
+    }
+  }
+
+  .swiper {
+
+    &-slide {
+      width: auto;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      @include respond-to($tablet) {
+        width: 104px;
+      }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      margin: 0;
+      position: absolute;
+      top: 16px;
+      right: 12px;
+      background-color: #fff;
+      border-radius: 24px;
+      box-shadow: 0 3px 8px #0000001a;
+
+      @include respond-to($tablet) {
+        display: none;
+        visibility: hidden;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: #3d3d3d;
+      }
+
+      &.swiper-button-disabled {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    .swiper-scrollbar {
+      margin: 24px auto 0;
+      position: relative;
+      width: 184px;
+      border-radius: 2px;
+
+      @include respond-to($tablet) {
+        display: none;
+        visibility: hidden;
+      }
+
+      &-drag {
+        height: 3px;
+        background-color: #3d3d3d;
+        border-radius: 2px;
+      }
+    }
+  }
+
 }

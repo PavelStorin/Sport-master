@@ -4,54 +4,41 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
 export function initSlider() {
-	document.addEventListener("DOMContentLoaded", () => {
-		if (document.querySelector(".popular-brands__slider")) {
-			new Swiper(".popular-brands__slider", {
-				slidesPerView: "auto",
-				slidesPerGroup: 6,
-				spaceBetween: 8,
+    document.addEventListener("DOMContentLoaded", () => {
+        if (document.querySelector(".popular-brands__slider")) {
+            new Swiper(".popular-brands__slider", {
+                slidesPerView: 'auto',
+                spaceBetween: 8, // расстояние между ними
+                keyboard: true,
 
-				slidesOffsetAfter: 16,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 6.5, // кол-во видимых слайдов
+                        slidesPerGroup: 6, // переключаем по 10 слайдов
+                    },
 
-				breakpoints: {
-					769: {
-						slidesOffsetAfter: 32,
-					},
+                    1280: {
+                        slidesPerView: 8.5, // кол-во видимых слайдов
+                        slidesPerGroup: 6, // переключаем по 10 слайдов
+                    },
 
-					1025: {
-						slidesOffsetAfter: 0,
-						scrollbar: {
-							dragSize: 80,
-						},
-					},
+                    1440: {
+                        slidesPerView: 10.5, // кол-во видимых слайдов
+                        slidesPerGroup: 10, // переключаем по 10 слайдов
+                    },
+                },
 
-					1280: {
-						scrollbar: {
-							dragSize: 100,
-						},
-					},
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
 
-					1440: {
-						scrollbar: {
-							dragSize: 120,
-						},
-					},
-				},
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    draggable: false,
+                },
 
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-
-				scrollbar: {
-					el: ".swiper-scrollbar",
-					draggable: false,
-					dragSize: 120,
-				},
-
-				watchSlidesProgress: true,
-				keyboard: true,
-			});
-		}
-	});
+            });
+        }
+    });
 }

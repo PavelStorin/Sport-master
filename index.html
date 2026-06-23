@@ -1,711 +1,773 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Спортмастер — спортивный магазин для всей семьи!</title>
-    <link rel="stylesheet" href="./styles/style.scss" />
+    <link rel="stylesheet" href="./styles/style.scss"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
     />
     <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.sportmaster.ru/upload/content/application/ru_sm3/prod/front/public/pwa/icon-180.png"
+            rel="icon"
+            type="image/png"
+            href="https://cdn.sportmaster.ru/upload/content/application/ru_sm3/prod/front/public/pwa/icon-180.png"
     />
     <script type="module" src="./scripts/main.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="header">
-      <div class="header__top">
+<body>
+<header class="header">
+    <div class="header__top">
         <div class="container header__container">
-          <button class="header__location-btn btn-reset" type="button">
-            Фрязино
-          </button>
-          <nav class="header__nav top-nav">
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="tel:+74957777771" class="top-nav__link"
-                  >8 495 777-777-1</a
-                >
-              </li>
-              <li class="top-nav__item">
-                <a href="/stores" class="top-nav__link">Магазины</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="/delivery" class="top-nav__link">Доставка и оплата</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="/marketplace" class="top-nav__link"
-                  >Продавай на Спортмастере</a
-                >
-              </li>
-              <li class="top-nav__item">
-                <button
-                  class="top-nav__dropdown dropdown-btn btn-reset"
-                  type="button"
-                >
-                  <span class="dropdown-btn__text">Помощь</span>
-                  <span class="dropdown-btn__icon"
-                    ><svg
-                      class="dropdown-btn__svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="10"
-                      width="10"
-                      viewBox="0 0 640 640"
-                    >
+            <button class="header__location-btn btn-reset" type="button">
+                Фрязино
+            </button>
+            <nav class="header__nav top-nav">
+                <ul class="top-nav__list">
+                    <li class="top-nav__item">
+                        <a href="tel:+74957777771" class="top-nav__link"
+                        >8 495 777-777-1</a
+                        >
+                    </li>
+                    <li class="top-nav__item">
+                        <a href="/stores" class="top-nav__link">Магазины</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a href="/delivery" class="top-nav__link">Доставка и оплата</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a href="/marketplace" class="top-nav__link"
+                        >Продавай на Спортмастере</a
+                        >
+                    </li>
+                    <li class="top-nav__item">
+                        <button
+                                class="top-nav__dropdown dropdown-btn btn-reset"
+                                type="button"
+                        >
+                            <span class="dropdown-btn__text">Помощь</span>
+                            <span class="dropdown-btn__icon"
+                            ><svg
+                                    class="dropdown-btn__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="10"
+                                    width="10"
+                                    viewBox="0 0 640 640"
+                            >
                       <path
-                        d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
+                              d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
                       />
                     </svg>
                   </span>
-                </button>
-              </li>
-            </ul>
-          </nav>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </div>
 
-      <div class="header__main">
+    <div class="header__main">
         <div class="container header__container">
-          <a href="#" class="header__logo"></a>
+            <a href="#" class="header__logo"></a>
 
-          <div class="header__catalog-search catalog-search">
-            <button
-              class="catalog-search__btn catalog-btn btn-reset"
-              type="button"
-            >
-              <span class="catalog-btn__icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  width="20"
-                  viewBox="0 0 640 640"
+            <div class="header__catalog-search catalog-search">
+                <button
+                        class="catalog-search__btn catalog-btn btn-reset"
+                        type="button"
                 >
+              <span class="catalog-btn__icon"
+              ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      width="20"
+                      viewBox="0 0 640 640"
+              >
                   <path
-                    fill="#1551e5"
-                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+                          fill="#1551e5"
+                          d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
                   />
                 </svg>
               </span>
 
-              <span class="catalog-btn__text">Каталог</span>
-            </button>
+                    <span class="catalog-btn__text">Каталог</span>
+                </button>
 
-            <div class="header__search search-container">
-              <svg
-                class="search-container__icon-mobile"
-                xmlns="http://www.w3.org/2000/svg"
-                height="15"
-                width="15"
-                viewBox="0 0 640 640"
-              >
-                <path
-                  d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-                />
-              </svg>
+                <div class="header__search search-container">
+                    <svg
+                            class="search-container__icon-mobile"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="15"
+                            width="15"
+                            viewBox="0 0 640 640"
+                    >
+                        <path
+                                d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                        />
+                    </svg>
 
-              <input
-                type="search"
-                placeholder="Поиск"
-                class="search-container__input"
-                aria-label="Поиск по сайту"
-              />
-              <button
-                type="submit"
-                class="search-container__btn btn-reset"
-                aria-label="Найти"
-              >
-                <svg
-                  class="search-container__desktop-mobile"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  width="20"
-                  viewBox="0 0 640 640"
-                >
-                  <path
-                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-                  />
-                </svg>
-              </button>
+                    <input
+                            type="search"
+                            placeholder="Поиск"
+                            class="search-container__input"
+                            aria-label="Поиск по сайту"
+                    />
+                    <button
+                            type="submit"
+                            class="search-container__btn btn-reset"
+                            aria-label="Найти"
+                    >
+                        <svg
+                                class="search-container__desktop-mobile"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20"
+                                width="20"
+                                viewBox="0 0 640 640"
+                        >
+                            <path
+                                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                            />
+                        </svg>
+                    </button>
+                </div>
             </div>
-          </div>
 
-          <div class="header__actions user-actions">
-            <button class="user-actions__login btn-reset">войти</button>
+            <div class="header__actions user-actions">
+                <button class="user-actions__login btn-reset">войти</button>
 
-            <ul class="user-actions__list">
-              <li class="user-actions__item">
-                <a class="user-actions__icon" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    width="24"
-                    viewBox="0 0 640 640"
-                  >
-                    <path
-                      d="M519.8 126.4C536.6 120.8 545.6 102.7 540 85.9C534.4 69.1 516.3 60.1 499.6 65.6L386.6 103.3C372.7 79.8 347 64 317.7 64C273.5 64 237.7 99.8 237.7 144C237.7 147 237.9 149.9 238.2 152.8L115.6 193.6C98.8 199.2 89.8 217.3 95.4 234.1C101 250.9 119.1 259.9 135.9 254.3L271.4 209.1C275.9 212.3 280.7 215 285.8 217.3L285.8 544C285.8 561.7 300.1 576 317.8 576L509.8 576C527.5 576 541.8 561.7 541.8 544C541.8 526.3 527.5 512 509.8 512L349.8 512L349.8 217.3C370.8 208.1 387 190.3 394 168.3L519.9 126.3zM437.3 352L509.7 227.8L582.1 352L437.2 352zM509.7 448C572.6 448 624.9 414 635.7 369.1C638.3 358.1 634.7 346.8 629 337L533.8 173.8C528.8 165.2 519.6 160 509.7 160C499.8 160 490.6 165.3 485.6 173.8L390.4 337.1C384.7 346.9 381.1 358.2 383.7 369.2C394.5 414 446.8 448.1 509.7 448.1zM126.8 355.8L199.2 480L54.3 480L126.7 355.8zM.9 497.1C11.7 542 64 576 126.8 576C189.6 576 242 542 252.8 497.1C255.4 486.1 251.8 474.8 246.1 465L150.9 301.8C145.9 293.2 136.7 288 126.8 288C116.9 288 107.7 293.3 102.7 301.8L7.6 465.1C1.9 474.9-1.7 486.2 .9 497.2z"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="user-actions__item">
-                <a class="user-actions__icon" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    width="24"
-                    viewBox="0 0 640 640"
-                  >
-                    <path
-                      d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="user-actions__item">
-                <a class="user-actions__icon" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    width="24"
-                    viewBox="0 0 640 640"
-                  >
-                    <path
-                      d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+                <ul class="user-actions__list">
+                    <li class="user-actions__item">
+                        <a class="user-actions__icon" href="#">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 640 640"
+                            >
+                                <path
+                                        d="M519.8 126.4C536.6 120.8 545.6 102.7 540 85.9C534.4 69.1 516.3 60.1 499.6 65.6L386.6 103.3C372.7 79.8 347 64 317.7 64C273.5 64 237.7 99.8 237.7 144C237.7 147 237.9 149.9 238.2 152.8L115.6 193.6C98.8 199.2 89.8 217.3 95.4 234.1C101 250.9 119.1 259.9 135.9 254.3L271.4 209.1C275.9 212.3 280.7 215 285.8 217.3L285.8 544C285.8 561.7 300.1 576 317.8 576L509.8 576C527.5 576 541.8 561.7 541.8 544C541.8 526.3 527.5 512 509.8 512L349.8 512L349.8 217.3C370.8 208.1 387 190.3 394 168.3L519.9 126.3zM437.3 352L509.7 227.8L582.1 352L437.2 352zM509.7 448C572.6 448 624.9 414 635.7 369.1C638.3 358.1 634.7 346.8 629 337L533.8 173.8C528.8 165.2 519.6 160 509.7 160C499.8 160 490.6 165.3 485.6 173.8L390.4 337.1C384.7 346.9 381.1 358.2 383.7 369.2C394.5 414 446.8 448.1 509.7 448.1zM126.8 355.8L199.2 480L54.3 480L126.7 355.8zM.9 497.1C11.7 542 64 576 126.8 576C189.6 576 242 542 252.8 497.1C255.4 486.1 251.8 474.8 246.1 465L150.9 301.8C145.9 293.2 136.7 288 126.8 288C116.9 288 107.7 293.3 102.7 301.8L7.6 465.1C1.9 474.9-1.7 486.2 .9 497.2z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="user-actions__item">
+                        <a class="user-actions__icon" href="#">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 640 640"
+                            >
+                                <path
+                                        d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="user-actions__item">
+                        <a class="user-actions__icon" href="#">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24"
+                                    width="24"
+                                    viewBox="0 0 640 640"
+                            >
+                                <path
+                                        d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="header__down">
+    <div class="header__down">
         <div class="container header__container">
-          <nav class="header__menu down-menu">
-            <ul class="down-menu__list">
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">женщинам</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">мужчинам</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">детям и подросткам</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">виды спорта</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">бренды</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link"
-                  ><div class="down-menu__icon daimond-icon"></div>
-                  премиум</a
-                >
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link"
-                  ><div class="down-menu__icon style-icon"></div>
-                  стиль</a
-                >
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">из-за рубежа</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link"
-                  ><div class="down-menu__icon sale-icon"></div>
-                  скидки</a
-                >
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">акции</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">медиа</a>
-              </li>
-              <li class="down-menu__item">
-                <a href="#" class="down-menu__link">подарочные карты</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="header__menu down-menu">
+                <ul class="down-menu__list">
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">женщинам</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">мужчинам</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">детям и подросткам</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">виды спорта</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">бренды</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link"
+                        >
+                            <div class="down-menu__icon daimond-icon"></div>
+                            премиум</a
+                        >
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link"
+                        >
+                            <div class="down-menu__icon style-icon"></div>
+                            стиль</a
+                        >
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">из-за рубежа</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link"
+                        >
+                            <div class="down-menu__icon sale-icon"></div>
+                            скидки</a
+                        >
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">акции</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">медиа</a>
+                    </li>
+                    <li class="down-menu__item">
+                        <a href="#" class="down-menu__link">подарочные карты</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </div>
 
-      <div class="header__down-mobile">
+    <div class="header__down-mobile">
         <div class="container header__container">
-          <button class="header__location-btn btn-mobile btn-reset">
-            <span class="btn-mobile__text">Фрязино</span>
-          </button>
-          <button class="header__btn-icon btn-reset">
-            <svg
-              class="btn-mobile__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              height="12"
-              width="7"
-              viewBox="0 0 256 512"
-            >
-              <path
-                d="M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
-              />
-            </svg>
-          </button>
+            <button class="header__location-btn btn-mobile btn-reset">
+                <span class="btn-mobile__text">Фрязино</span>
+            </button>
+            <button class="header__btn-icon btn-reset">
+                <svg
+                        class="btn-mobile__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="12"
+                        width="7"
+                        viewBox="0 0 256 512"
+                >
+                    <path
+                            d="M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                    />
+                </svg>
+            </button>
         </div>
-      </div>
+    </div>
 
-      <nav class="header__menu bar-mobile">
+    <nav class="header__menu bar-mobile">
         <a href="#" class="bar-mobile__link active">
-          <svg
-            class="bar-mobile__icon"
-            xmlns="http://www.w3.org/2000/svg"
-            height="18"
-            width="18"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M240 6.1c9.1-8.2 22.9-8.2 32 0l232 208c9.9 8.8 10.7 24 1.8 33.9s-24 10.7-33.9 1.8l-8-7.2 0 205.3c0 35.3-28.7 64-64 64l-288 0c-35.3 0-64-28.7-64-64l0-205.3-8 7.2c-9.9 8.8-25 8-33.9-1.8s-8-25 1.8-33.9L240 6.1zm16 50.1L96 199.7 96 448c0 8.8 7.2 16 16 16l48 0 0-104c0-39.8 32.2-72 72-72l48 0c39.8 0 72 32.2 72 72l0 104 48 0c8.8 0 16-7.2 16-16l0-248.3-160-143.4zM208 464l96 0 0-104c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24l0 104z"
-            />
-          </svg>
-          <span class="bar-mobile__text">Главная</span>
+            <svg
+                    class="bar-mobile__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="18"
+                    viewBox="0 0 512 512"
+            >
+                <path
+                        d="M240 6.1c9.1-8.2 22.9-8.2 32 0l232 208c9.9 8.8 10.7 24 1.8 33.9s-24 10.7-33.9 1.8l-8-7.2 0 205.3c0 35.3-28.7 64-64 64l-288 0c-35.3 0-64-28.7-64-64l0-205.3-8 7.2c-9.9 8.8-25 8-33.9-1.8s-8-25 1.8-33.9L240 6.1zm16 50.1L96 199.7 96 448c0 8.8 7.2 16 16 16l48 0 0-104c0-39.8 32.2-72 72-72l48 0c39.8 0 72 32.2 72 72l0 104 48 0c8.8 0 16-7.2 16-16l0-248.3-160-143.4zM208 464l96 0 0-104c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24l0 104z"
+                />
+            </svg>
+            <span class="bar-mobile__text">Главная</span>
         </a>
 
         <button class="bar-mobile__btn btn-reset">
-          <svg
-            class="bar-mobile__icon"
-            xmlns="http://www.w3.org/2000/svg"
-            height="18"
-            width="18"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zm-312 8l0 64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64l0 96c0 13.3 10.7 24 24 24s24-10.7 24-24l0-96c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-            />
-          </svg>
-          <span class="bar-mobile__text">Каталог</span>
+            <svg
+                    class="bar-mobile__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="18"
+                    viewBox="0 0 512 512"
+            >
+                <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zm-312 8l0 64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64l0 96c0 13.3 10.7 24 24 24s24-10.7 24-24l0-96c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+            </svg>
+            <span class="bar-mobile__text">Каталог</span>
         </button>
 
         <a href="#" class="bar-mobile__link">
-          <svg
-            class="bar-mobile__icon"
-            xmlns="http://www.w3.org/2000/svg"
-            height="18"
-            width="18"
-            viewBox="0 0 448 512"
-          >
-            <path
-              d="M443.7 208c2.7 4.7 4.3 10.2 4.3 16 0 17.7-14.3 32-32 32l-5.1 0-22.4 213c-2.6 24.4-23.2 43-47.8 43l-233.6 0c-24.6 0-45.2-18.5-47.8-43L37.1 256 32 256c-17.7 0-32-14.3-32-32 0-5.8 1.6-11.3 4.3-16l439.4 0zM224-16c79.5 0 144 64.5 144 144l0 32-48 0 0-32c0-53-43-96-96-96s-96 43-96 96l0 32-48 0 0-32C80 48.5 144.5-16 224-16z"
-            />
-          </svg>
-          <span class="bar-mobile__text">Корзина</span>
+            <svg
+                    class="bar-mobile__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="18"
+                    viewBox="0 0 448 512"
+            >
+                <path
+                        d="M443.7 208c2.7 4.7 4.3 10.2 4.3 16 0 17.7-14.3 32-32 32l-5.1 0-22.4 213c-2.6 24.4-23.2 43-47.8 43l-233.6 0c-24.6 0-45.2-18.5-47.8-43L37.1 256 32 256c-17.7 0-32-14.3-32-32 0-5.8 1.6-11.3 4.3-16l439.4 0zM224-16c79.5 0 144 64.5 144 144l0 32-48 0 0-32c0-53-43-96-96-96s-96 43-96 96l0 32-48 0 0-32C80 48.5 144.5-16 224-16z"
+                />
+            </svg>
+            <span class="bar-mobile__text">Корзина</span>
         </a>
 
         <a href="#" class="bar-mobile__link">
-          <svg
-            class="bar-mobile__icon"
-            xmlns="http://www.w3.org/2000/svg"
-            height="18"
-            width="18"
-            viewBox="0 0 640 640"
-          >
-            <path
-              d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z"
-            />
-          </svg>
-          <span class="bar-mobile__text">Избранное</span>
+            <svg
+                    class="bar-mobile__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="18"
+                    viewBox="0 0 640 640"
+            >
+                <path
+                        d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z"
+                />
+            </svg>
+            <span class="bar-mobile__text">Избранное</span>
         </a>
 
         <button class="bar-mobile__btn btn-reset">
-          <svg
-            class="bar-mobile__icon"
-            xmlns="http://www.w3.org/2000/svg"
-            height="18"
-            width="21"
-            viewBox="0 0 448 512"
-          >
-            <path
-              d="M256.5-32a56 56 0 1 1 0 112 56 56 0 1 1 0-112zM123.6 176c-3.3 0-6.2 2-7.4 5L94.2 235.9c-6.6 16.4-25.2 24.4-41.6 17.8s-24.4-25.2-17.8-41.6l21.9-54.9C67.7 129.9 94.1 112 123.6 112l97.3 0c28.5 0 54.8 15.1 69.1 39.7l32.8 56.3 61.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-61.6 0c-22.8 0-43.8-12.1-55.3-31.8l-10-17.1-20.7 70.4 75.4 22.6c27.7 8.3 41.8 39 30.1 65.5L285.7 509c-7.2 16.2-26.1 23.4-42.2 16.2s-23.4-26.1-16.2-42.2l49.2-110.8-95.9-28.8c-32.7-9.8-52-43.7-43.7-76.8l22.7-90.6-35.9 0zm-8 181c13.3 14.9 30.7 26.3 51.2 32.4l4.7 1.4-6.9 19.3c-5.8 16.3-16 30.8-29.3 41.8L52.9 519.8c-13.6 11.2-33.8 9.3-45-4.3s-9.3-33.8 4.3-45l82.4-67.9c4.5-3.7 7.8-8.5 9.8-13.9L115.6 357z"
-            />
-          </svg>
-          <span class="bar-mobile__text">Мой СМ</span>
+            <svg
+                    class="bar-mobile__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="21"
+                    viewBox="0 0 448 512"
+            >
+                <path
+                        d="M256.5-32a56 56 0 1 1 0 112 56 56 0 1 1 0-112zM123.6 176c-3.3 0-6.2 2-7.4 5L94.2 235.9c-6.6 16.4-25.2 24.4-41.6 17.8s-24.4-25.2-17.8-41.6l21.9-54.9C67.7 129.9 94.1 112 123.6 112l97.3 0c28.5 0 54.8 15.1 69.1 39.7l32.8 56.3 61.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-61.6 0c-22.8 0-43.8-12.1-55.3-31.8l-10-17.1-20.7 70.4 75.4 22.6c27.7 8.3 41.8 39 30.1 65.5L285.7 509c-7.2 16.2-26.1 23.4-42.2 16.2s-23.4-26.1-16.2-42.2l49.2-110.8-95.9-28.8c-32.7-9.8-52-43.7-43.7-76.8l22.7-90.6-35.9 0zm-8 181c13.3 14.9 30.7 26.3 51.2 32.4l4.7 1.4-6.9 19.3c-5.8 16.3-16 30.8-29.3 41.8L52.9 519.8c-13.6 11.2-33.8 9.3-45-4.3s-9.3-33.8 4.3-45l82.4-67.9c4.5-3.7 7.8-8.5 9.8-13.9L115.6 357z"
+                />
+            </svg>
+            <span class="bar-mobile__text">Мой СМ</span>
         </button>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main class="main">
-      <section class="main__brands popular-brands container main__container">
+<main class="main">
+    <section class="main__brands popular-brands container main__container">
         <h1 class="popular-brands__title section-title">Популярные бренды</h1>
         <div class="swiper popular-brands__slider">
-          <ul class="swiper-wrapper popular-brands__list">
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon puma"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon outventure"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon adidas"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon nike"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon demix"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon kappa"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon northland"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon reebok"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon stern"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon nb"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon fila"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon termit"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon reaction"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon geotech"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon sensana"></div
-              ></a>
-            </li>
-            <li class="swiper-slide popular-brands__item">
-              <a href="#" class="popular-brands__link"
-                ><div class="popular-brands__icon crocs"></div
-              ></a>
-            </li>
-          </ul>
-          <div class="swiper-button-prev">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24"
-              width="24"
-              viewBox="0 0 512 512"
-              class="slider-arrow-icon"
-            >
-              <path
-                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-              />
-            </svg>
-          </div>
-          <div class="swiper-button-next">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24"
-              width="24"
-              viewBox="0 0 512 512"
-              class="slider-arrow-icon"
-            >
-              <path
-                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-              />
-            </svg>
-          </div>
-          <div class="scrollbar-wrapper">
-            <div class="swiper-scrollbar"></div>
-          </div>
-        </div>
-      </section>
 
-      <section class="main__sports sports container main__container">
+            <ul class="swiper-wrapper popular-brands__list">
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon puma"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon outventure"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon adidas"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon nike"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon demix"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon kappa"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon northland"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon reebok"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon stern"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon nb"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon fila"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon termit"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon reaction"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon geotech"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon sensana"></div
+                        >
+                    </a>
+                </li>
+                <li class="swiper-slide popular-brands__item">
+                    <a href="#" class="popular-brands__link"
+                    >
+                        <div class="popular-brands__icon crocs"></div
+                        >
+                    </a>
+                </li>
+            </ul>
+
+            <div class="swiper-button-prev">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        width="24"
+                        viewBox="0 0 512 512"
+                        class="slider-arrow-icon"
+                >
+                    <path
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                    />
+                </svg>
+            </div>
+
+            <div class="swiper-button-next">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        width="24"
+                        viewBox="0 0 512 512"
+                        class="slider-arrow-icon"
+                >
+                    <path
+                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                </svg>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+    </section>
+
+    <section class="main__sports sports container main__container">
         <h1 class="sports__title section-title">Виды спорта</h1>
         <div class="sports__list">
-          <a href="#" class="sports__card tourism">
-            <span class="sports__link">Туризм</span>
-          </a>
+            <a href="#" class="sports__card tourism">
+                <span class="sports__link">Туризм</span>
+            </a>
 
-          <a href="#" class="sports__card camping">
-            <span class="sports__link">Кэмпинг</span>
-          </a>
+            <a href="#" class="sports__card camping">
+                <span class="sports__link">Кэмпинг</span>
+            </a>
 
-          <a href="#" class="sports__card fishing">
-            <span class="sports__link">Рыбалка</span>
-          </a>
+            <a href="#" class="sports__card fishing">
+                <span class="sports__link">Рыбалка</span>
+            </a>
 
-          <a href="#" class="sports__card water-tourism">
-            <span class="sports__link">Водный туризм</span>
-          </a>
+            <a href="#" class="sports__card water-tourism">
+                <span class="sports__link">Водный туризм</span>
+            </a>
 
-          <a href="#" class="sports__card beach">
-            <span class="sports__link">Пляж</span>
-          </a>
+            <a href="#" class="sports__card beach">
+                <span class="sports__link">Пляж</span>
+            </a>
 
-          <a href="#" class="sports__card cycle">
-            <span class="sports__link">Велоспорт</span>
-          </a>
+            <a href="#" class="sports__card cycle">
+                <span class="sports__link">Велоспорт</span>
+            </a>
 
-          <a href="#" class="sports__card scooter">
-            <span class="sports__link">Самокаты</span>
-          </a>
+            <a href="#" class="sports__card scooter">
+                <span class="sports__link">Самокаты</span>
+            </a>
 
-          <a href="#" class="sports__card run">
-            <span class="sports__link">Бег</span>
-          </a>
+            <a href="#" class="sports__card run">
+                <span class="sports__link">Бег</span>
+            </a>
 
-          <a href="#" class="sports__card trailrun">
-            <span class="sports__link">Трейлранинг</span>
-          </a>
+            <a href="#" class="sports__card trailrun">
+                <span class="sports__link">Трейлранинг</span>
+            </a>
 
-          <a href="#" class="sports__card rollerskate">
-            <span class="sports__link">Ролики</span>
-          </a>
+            <a href="#" class="sports__card rollerskate">
+                <span class="sports__link">Ролики</span>
+            </a>
 
-          <a href="#" class="sports__card skateboarding">
-            <span class="sports__link">Скейтборд</span>
-          </a>
+            <a href="#" class="sports__card skateboarding">
+                <span class="sports__link">Скейтборд</span>
+            </a>
 
-          <a href="#" class="sports__card football">
-            <span class="sports__link">Футбол</span>
-          </a>
+            <a href="#" class="sports__card football">
+                <span class="sports__link">Футбол</span>
+            </a>
         </div>
-      </section>
+    </section>
 
-      <section class="main__products products container products__container">
+    <section class="main__products products container products__container">
         <div class="products__grid">
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card leggings"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card leggings"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-red"
-                >-50%</span
+              >-50%</span
               >
-              <div class="products__prices">
-                <span class="products__price">2 249 ₽</span>
-                <span class="products__price-old">4 499 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Легинсы компрессионные женские Demix Booty Booster Gym</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">2 249 ₽</span>
+                        <span class="products__price-old">4 499 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Легинсы компрессионные женские Demix Booty Booster Gym</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card jumper"></div
-            ></a>
-            <div class="products__info">
-              <span class="products__badge"></span>
-              <span class="products__price">1 199 ₽</span>
-              <a href="#" class="products__name"
-                >Джемпер флисовый для девочек Outventure</a
-              >
-            </div>
-          </article>
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card jumper"></div
+                    >
+                </a>
+                <div class="products__info">
+                    <span class="products__badge"></span>
+                    <span class="products__price">1 199 ₽</span>
+                    <a href="#" class="products__name"
+                    >Джемпер флисовый для девочек Outventure</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card sneakers"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card sneakers"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-green"
-                >новая коллекция</span
+              >новая коллекция</span
               >
-              <div class="products__prices">
-                <span class="products__price">2 249 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Кроссовки мужские Demix Turbo 2</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">2 249 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Кроссовки мужские Demix Turbo 2</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card denton"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card denton"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-yellow"
-                >Сборка за 1 ₽</span
+              >Сборка за 1 ₽</span
               >
-              <div class="products__prices">
-                <span class="products__price">23 999 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Велосипед горный женский Denton Aura 2.0 27.5"</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">23 999 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Велосипед горный женский Denton Aura 2.0 27.5"</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card leggings"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card leggings"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-red"
-                >-50%</span
+              >-50%</span
               >
-              <div class="products__prices">
-                <span class="products__price">2 249 ₽</span>
-                <span class="products__price-old">4 499 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Легинсы компрессионные женские Demix Booty Booster Gym</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">2 249 ₽</span>
+                        <span class="products__price-old">4 499 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Легинсы компрессионные женские Demix Booty Booster Gym</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card jumper"></div
-            ></a>
-            <div class="products__info">
-              <span class="products__badge"></span>
-              <span class="products__price">1 199 ₽</span>
-              <a href="#" class="products__name"
-                >Джемпер флисовый для девочек Outventure</a
-              >
-            </div>
-          </article>
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card jumper"></div
+                    >
+                </a>
+                <div class="products__info">
+                    <span class="products__badge"></span>
+                    <span class="products__price">1 199 ₽</span>
+                    <a href="#" class="products__name"
+                    >Джемпер флисовый для девочек Outventure</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card sneakers"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card sneakers"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-green"
-                >новая коллекция</span
+              >новая коллекция</span
               >
-              <div class="products__prices">
-                <span class="products__price">2 249 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Кроссовки мужские Demix Turbo 2</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">2 249 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Кроссовки мужские Demix Turbo 2</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card denton"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card denton"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-yellow"
-                >Сборка за 1 ₽</span
+              >Сборка за 1 ₽</span
               >
-              <div class="products__prices">
-                <span class="products__price">23 999 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Велосипед горный женский Denton Aura 2.0 27.5"</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">23 999 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Велосипед горный женский Denton Aura 2.0 27.5"</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card leggings"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card leggings"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-red"
-                >-50%</span
+              >-50%</span
               >
-              <div class="products__prices">
-                <span class="products__price">2 249 ₽</span>
-                <span class="products__price-old">4 499 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Легинсы компрессионные женские Demix Booty Booster Gym</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">2 249 ₽</span>
+                        <span class="products__price-old">4 499 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Легинсы компрессионные женские Demix Booty Booster Gym</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card jumper"></div
-            ></a>
-            <div class="products__info">
-              <span class="products__badge"></span>
-              <span class="products__price">1 199 ₽</span>
-              <a href="#" class="products__name"
-                >Джемпер флисовый для девочек Outventure</a
-              >
-            </div>
-          </article>
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card jumper"></div
+                    >
+                </a>
+                <div class="products__info">
+                    <span class="products__badge"></span>
+                    <span class="products__price">1 199 ₽</span>
+                    <a href="#" class="products__name"
+                    >Джемпер флисовый для девочек Outventure</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card sneakers"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card sneakers"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-green"
-                >новая коллекция</span
+              >новая коллекция</span
               >
-              <div class="products__prices">
-                <span class="products__price">2 249 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Кроссовки мужские Demix Turbo 2</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">2 249 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Кроссовки мужские Demix Turbo 2</a
+                    >
+                </div>
+            </article>
 
-          <article class="products__card">
-            <a href="#" class="products__img-link"
-              ><div class="products__img-card denton"></div
-            ></a>
-            <div class="products__info">
+            <article class="products__card">
+                <a href="#" class="products__img-link"
+                >
+                    <div class="products__img-card denton"></div
+                    >
+                </a>
+                <div class="products__info">
               <span class="products__badge products__badge--theme-yellow"
-                >Сборка за 1 ₽</span
+              >Сборка за 1 ₽</span
               >
-              <div class="products__prices">
-                <span class="products__price">23 999 ₽</span>
-              </div>
-              <a href="#" class="products__name"
-                >Велосипед горный женский Denton Aura 2.0 27.5"</a
-              >
-            </div>
-          </article>
+                    <div class="products__prices">
+                        <span class="products__price">23 999 ₽</span>
+                    </div>
+                    <a href="#" class="products__name"
+                    >Велосипед горный женский Denton Aura 2.0 27.5"</a
+                    >
+                </div>
+            </article>
         </div>
-      </section>
-    </main>
-  </body>
+    </section>
+</main>
+</body>
 </html>
