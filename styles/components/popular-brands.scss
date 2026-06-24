@@ -5,8 +5,6 @@
     margin-bottom: 20px;
 
     &__list.swiper-wrapper {
-        display: flex;       
-        flex-direction: row; 
         padding: 0;
         margin: 0;
         margin-bottom: 30px;
@@ -18,7 +16,6 @@
 
     &__item.swiper-slide {
         width: 130px;
-        flex-shrink: 0;
         height: auto;
     }
 
@@ -154,9 +151,6 @@
                 box-shadow: 0 3px 8px #0000001a;
                 position: absolute !important;
                 top: 37.5px;
-                color: transparent !important;
-                font-size: 0 !important;
-
                 transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
                 &:hover {
@@ -171,7 +165,6 @@
 
                 &::after {
                     display: none !important;
-                    content: none !important; 
                 }
 
                 &.swiper-button-disabled {
