@@ -7,11 +7,7 @@
     &__list.swiper-wrapper {
         padding: 0;
         margin: 0;
-        margin-bottom: 30px;
-
-        @include respond-to($tablet) {
-            margin-bottom: 0; 
-        }
+        position: relative; 
     }
 
     &__item.swiper-slide {
@@ -142,6 +138,7 @@
 
     &__slider {
         position: relative;
+
         &.swiper {
             .swiper-button-prev, 
             .swiper-button-next {
@@ -161,10 +158,6 @@
                 &:active {
                     background-color: $color-btn-active-ng;
                     box-shadow: 0 1px 3px #0003;
-                }
-
-                &::after {
-                    display: none !important;
                 }
 
                 &.swiper-button-disabled {
@@ -190,23 +183,22 @@
                 right: 10px;
             }
 
-            .scrollbar-wrapper {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 190px; 
-                
-                
-                @include respond-to($tablet) {
-                    display: none !important;
-                }  
-            }
-
             .swiper-scrollbar {
-                --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
-                --swiper-scrollbar-drag-bg-color: #3d3d3d;
-                --swiper-scrollbar-size: 3px;
+                    margin: 24px auto 0;
+                    position: relative;
+                    width: 184px;
+                    border-radius: 2px;
+
+                @include respond-to($tablet) {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                &-drag {
+                    height: 3px;
+                    background-color: #3d3d3d;
+                    border-radius: 2px;
+                }
             }
         }
     }

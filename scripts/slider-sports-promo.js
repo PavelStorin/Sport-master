@@ -5,21 +5,14 @@ import "swiper/css/scrollbar";
 
 export function initSlider() {
 	document.addEventListener("DOMContentLoaded", () => {
-		if (document.querySelector(".popular-brands__slider, .sports__list")) {
-			new Swiper(".popular-brands__slider, .sports__list", {
+		if (document.querySelector(".sports-promo__slider")) {
+			new Swiper(".sports-promo__slider", {
 				slidesPerView: "auto",
-				slidesPerGroup: 6,
-				spaceBetween: 8,
-
-				slidesOffsetAfter: 16,
+				slidesPerGroup: 8,
+				spaceBetween: 12,
 
 				breakpoints: {
-					769: {
-						slidesOffsetAfter: 32,
-					},
-
 					1025: {
-						slidesOffsetAfter: 0,
 						scrollbar: {
 							dragSize: 80,
 						},
@@ -46,11 +39,7 @@ export function initSlider() {
 				scrollbar: {
 					el: ".swiper-scrollbar",
 					draggable: false,
-					dragSize: 120,
 				},
-
-				watchSlidesProgress: true,
-				keyboard: true,
 			});
 		}
 	});

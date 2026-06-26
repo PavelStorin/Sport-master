@@ -4,12 +4,6 @@
 .sports {
     margin-bottom: 60px;
 
-    &__list {
-        display: flex;
-        gap: 8px;
-        overflow-x: auto;
-    }
-
     &__link {
         font-weight: $font-weight-medium;
         font-size: $font-size-m;
@@ -20,7 +14,7 @@
         }
     }
 
-     &__card {
+     &__card.swiper-slide {
         flex-shrink: 0;
         display: block;
         text-decoration: none;
@@ -36,16 +30,16 @@
         @include respond-to($tablet) {
             width: 162px;
             height: 90px;
-            &:last-child {
-                margin-right: 32px;
-            } 
+            // &:last-child {
+            //     margin-right: 32px;
+            // } 
         }
 
-        @include respond-to($mobile) {
-            &:last-child {
-                margin-right: 16px;
-            } 
-        }
+        // @include respond-to($mobile) {
+        //     &:last-child {
+        //         margin-right: 16px;
+        //     } 
+        // }
 
         &.tourism {
             background-image: url("/images/tourism.jpg");
@@ -93,6 +87,73 @@
 
         &.football {
             background-image: url("/images/football.jpg");
+        }
+    }
+
+    .swiper {
+        position: relative;
+
+        &.swiper {
+            .swiper-button-prev, 
+            .swiper-button-next {
+                padding: 10px;
+                background-color: $color-white;
+                border-radius: 24px;
+                box-shadow: 0 3px 8px #0000001a;
+                position: absolute !important;
+                top: 60px;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    background-color: $color-btn-hover-ng;
+                    box-shadow: 0 1px 3px #0003;
+                }
+
+                &:active {
+                    background-color: $color-btn-active-ng;
+                    box-shadow: 0 1px 3px #0003;
+                }
+
+                &.swiper-button-disabled {
+                    display: none !important;
+                }
+
+                .slider-arrow-icon {
+                    width: 16px;
+                    height: 16px;
+                    fill: $color-grey-link;
+                }
+
+                @include respond-to($tablet) {
+                    display: none !important;
+                }
+            }
+
+            .swiper-button-prev {
+                left: 10px;
+            }
+
+            .swiper-button-next {
+                right: 10px;
+            }
+
+            .swiper-scrollbar {
+                    margin: 24px auto 0;
+                    position: relative;
+                    width: 184px;
+                    border-radius: 2px;
+
+                @include respond-to($tablet) {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                &-drag {
+                    height: 3px;
+                    background-color: #3d3d3d;
+                    border-radius: 2px;
+                }
+            }
         }
     }
 }

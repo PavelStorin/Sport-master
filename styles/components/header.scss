@@ -2,7 +2,6 @@
 @use "../base/mixins.scss" as*;
 
 .header {
-    margin-bottom: 20px;
 
     &__top {
         background-color: $color-blue-background;
@@ -333,6 +332,7 @@
         background-color: $color-blue;
         min-height: 31px;
         height: 100%;
+        border-top: 1px solid rgba(255, 255, 255, .2);
         @include flex-center(flex-start);
 
         @include respond-from(1025) {

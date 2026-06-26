@@ -1,0 +1,142 @@
+@use "../base/variables" as *;
+@use "../base/mixins.scss" as*;
+
+
+.sports-promo {
+    background-color: $color-bc-dark;
+    margin-bottom: 60px !important;
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .swiper {
+        padding: 24px 32px 24px 44px;
+        width: 100%;
+        position: relative;
+        @include respond-to($tablet) {
+            padding: 20px 32px;
+        }
+
+         @include respond-to($mobile) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    /* Большая карточка-слайд */
+    &__card {
+        flex-shrink: 0;
+
+        width: 392px !important; 
+        height: 380px !important; 
+    
+        border-radius: $radius-xl;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+
+        @include respond-to($tablet) {
+            width: 343px !important; 
+            height: 332px !important; 
+        }
+    } 
+
+    /* Колонка для двух маленьких карточек */
+    &__column.swiper-slide {
+        display: flex;
+        flex-direction: column;
+        gap: 12px; 
+        flex-shrink: 0;
+        width: auto !important;
+    }
+
+    /* Маленькая карточка внутри колонки */
+    &__card-column {
+        width: 326px;
+        height: 184px;
+        border-radius: $radius-xl;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        box-sizing: border-box;
+
+          @include respond-to($tablet) {
+            width: 286px; 
+            height: 161px; 
+        }
+    }
+
+    /* СТИЛИ ДЛЯ КНОПОК И СКРОЛЛБАРА SWIPER */
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: $color-white;
+        border-radius: 24px;
+        box-shadow: 0 3px 8px #0000001a;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            background-color: $color-btn-hover-ng;
+            box-shadow: 0 1px 3px #0003;
+        }
+
+        &:active {
+            background-color: $color-btn-active-ng;
+            box-shadow: 0 1px 3px #0003;
+        }
+
+        &.swiper-button-disabled {
+            display: none !important;
+        }
+
+        .slider-arrow-icon {
+            width: 16px;
+            height: 16px;
+            fill: $color-grey-link;
+        }
+
+        @include respond-to($tablet) {
+            display: none !important;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 40px !important;
+    }
+
+    .swiper-button-next {
+        right: 40px !important;
+    }
+
+    .swiper-scrollbar {
+        margin: 30px auto 0 !important;
+        position: relative !important;
+        width: 184px !important;
+        border-radius: 2px;
+        background-color: $color-grey-link;
+        
+
+        @include respond-to($tablet) {
+            display: none;
+            visibility: hidden;
+        }
+
+        &-drag {
+            height: 3px;
+            background-color: $color-white;
+            border-radius: 2px;
+        }
+    }
+}
+
+.prices-halved {
+    background-image: url(/images/prices-halved.webp);
+}
+
+.tent {
+    background-image: url(/images/tent.webp);
+}
+
+.shock-price {
+    background-image: url(/images/shock-price.webp);
+}
